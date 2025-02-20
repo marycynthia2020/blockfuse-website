@@ -13,10 +13,10 @@
     <title>Document</title>
   </head>
   <body class="w-screen bg-[#111114] text-white font-space">
-    <div class="overflow-x-hidden relative">
-      <header>
+    <div class="overflow-x-hidden relative max-w-[1920px]" >
+      <header id="header">
         <nav
-          class="bg-[#2f2e34] w-4/5 py-4 px-8 mx-auto mt-8 mb-24 md:mb-36 flex items-center justify-between text-white"
+          class="bg-[#2f2e34] w-4/5 py-4 px-8 mx-auto mt-8 mb-24 md:mb-36 flex items-center justify-between text-white "
         >
           <div>
             <img
@@ -27,7 +27,7 @@
             />
           </div>
           <ul class="hidden md:flex md:items-center space-x-4 opacity-70">
-            <li><a href="">Home</a></li>
+            <li><a href="" class="text-[#ab65ef]">Home</a></li>
             <li><a href="">About us</a></li>
             <li><a href="">Team</a></li>
             <li><a href="">BootCamp</a></li>
@@ -57,15 +57,16 @@
       </header>
 
       <main>
+        <!-- hero sction -->
         <section>
           <div
             class="flex flex-col items-center text-center space-y-6 mb-72 md:mb-96"
           >
-            <h1 class="text-6xl tracking-wider">
+            <h1 class=" w-4/5 md:w-full text-5xl md:text-6xl ">
               Unlock the Future with
               <span class="text-[#ab65ef]">Blockchain</span>
             </h1>
-            <div class="flex flex-col space-y-1 opacity-70">
+            <div class="flex flex-col space-y-1 opacity-70  w-4/5 md:full text-center">
               <p class="text-[18px]">
                 Transform your skills and career with comprehensive
               </p>
@@ -75,13 +76,15 @@
             </div>
 
             <button
-              class="border-2 border-[#3f1c4a] flex items-center gap-3 py-2 px-4 bg-[#ab65ef]"
+              class="border-2 border-[#3f1c4a] flex items-center gap-3 py-3 px-10 bg-[#ab65ef]"
             >
               Explore our Bootcamps
               <img src="/images/apply.svg" alt="" />
             </button>
           </div>
         </section>
+
+        <!-- big image section -->
 
         <section>
           <div class="flex flex-col items-center w-[80%] mx-auto mb-36">
@@ -103,19 +106,21 @@
                 of your growth.
               </p>
             </div>
-            <div class="w-full">
+            <div class="w-full  relative ">
               <img
-                src="/images/girlsimage1.png"
+                src="/images/girlsimage1.png "
                 alt=""
-                class="w-[100%] md:h-[80vh]"
+                class="w-[100%] md:h-[80vh] z-100  "
               />
+              <img src="/images/Secondary Image.svg" alt="" class=" w-20 h-20 md:w-72 md:h-72 absolute -top-4 -left-4 md:-top-14 md:-left-8 z-10">
             </div>
           </div>
         </section>
 
+            <!-- our bootcamp -->
         <section>
           <div
-            class="w-[90%] mx-auto mb-28 p-4 flex flex-col items-center justify-center space-y-10 space-x-10"
+            class="w-[90%] mb-28 p-4 flex flex-col items-center  space-y-10 space-x-10"
           >
             <div>
               <h2 class="text-2xl font-bold">Our Bootcamps</h2>
@@ -125,12 +130,12 @@
               class="w-full flex flex-col md:flex-row space-x-10 space-y-10 items-end"
             >
               <div
-                class="w-full mx-auto md:w-1/2 border-2 border-[#3f1c4a] p-8 flex flex-col"
+                class="w-full mx-auto md:w-1/2 border-2 border-[#3f1c4a] p-6 flex flex-col"
               >
                 <div
-                  class="bg-web2 h-[250px] md:h[200px] flex items-center justify-center mb-8"
+                  class="bg-web2 h-[250px]  flex items-center justify-center mb-8"
                 >
-                  <h2 class="text-2xl">Web2 for Web3 Preparatory Bootcamp</h2>
+                  <h2 class="text-2xl text-center">Web2 for Web3 Preparatory Bootcamp</h2>
                 </div>
                 <p class="tracking-wider leading-loose">
                   Learn the essentials of modern web development in HTML, CSS,
@@ -141,7 +146,7 @@
                   their web journey!
                 </p>
                 <button
-                  class="mb-2 self-center border-2 border-[#3f1c4a] flex items-center gap-3 py-2 px-10 bg-[#ab65ef] mt-8 md:mt-36"
+                  class="mb-2 self-center border-2 border-[#3f1c4a] flex items-center gap-3 py-3 px-16 bg-[#ab65ef] mt-8 md:mt-36"
                 >
                   Join the Waitlist
                   <img src="/images/apply.svg" alt="" />
@@ -152,7 +157,7 @@
               </div>
 
               <div
-                class="w-full mx-auto md:w-1/2 border-2 border-[#3f1c4a] p-8 md:pb-8 flex flex-col"
+                class="w-full mx-auto md:w-1/2 border-2 border-[#3f1c4a] p-6  flex flex-col"
               >
                 <div
                   class="bg-web3 h-[250px] flex items-center justify-center mb-8"
@@ -167,7 +172,7 @@
                   blockchain development!
                 </p>
                 <button
-                  class="mb-2 self-center border-2 border-[#3f1c4a] flex items-center gap-3 py-2 px-10 bg-[#ab65ef] mt-8 md:mt-36"
+                  class="mb-2 self-center border-2 border-[#3f1c4a] flex items-center gap-3 py-3 px-16 bg-[#ab65ef] mt-8 md:mt-36"
                 >
                   Join the Waitlist
                   <img src="/images/apply.svg" alt="" />
@@ -180,12 +185,13 @@
           </div>
         </section>
 
+            <!-- more than just the basic -->
         <section>
           <div
-            class="w-[70%] mx-auto flex flex-col items-center justify-center space-y-20"
+            class="w-[90%] text-center md:w-[75%] px-4 md:mx-auto  mb-20 flex flex-col items-center justify-center space-y-20"
           >
             <div>
-              <h2 class="text-3xl font-medium">Our Bootcamps</h2>
+              <h2 class="text-3xl font-medium">More Than Just the Basic</h2>
             </div>
 
             <div class="w-full grid md:grid-cols-2 gap-8 md:gap-16">
@@ -193,49 +199,468 @@
                 <img src="/images/real.svg" alt="" />
                 <div class="border-b-2 border-[#ab65ef] pb-4">
                   <h2 class="font-bold text-2xl my-4">REAL WORLD EXPERIENCE</h2>
-                  <p>
-                    Apply your skills to solve real-world problems and see
-                    immediate results.
-                  </p>
+                  <div class="flex space-x-4">
+                    <p>
+                      Apply your skills to solve real-world problems and see
+                      immediate results.
+                    </p>
+                    <img
+                      src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.99988%2016.7705L13.2699%2012.5005H20.9219V11.5005H13.2679L8.99988%207.23047L4.22987%2012.0005L8.99988%2016.7705Z'%20fill='white'/%3e%3c/svg%3e"
+                      alt="Diamond"
+                      class="w-5 h-5 sm:w-auto sm:h-auto"
+                    />
+                  </div>
                 </div>
               </div>
               <div class="md:flex md:items-center md:space-x-6">
                 <img src="/images/real.svg" alt="" />
                 <div class="border-b-2 border-[#ab65ef] pb-4">
-                  <h2 class="font-bold text-2xl my-4">REAL WORLD EXPERIENCE</h2>
-                  <p>
-                    Apply your skills to solve real-world problems and see
-                    immediate results.
-                  </p>
+                  <h2 class="font-bold text-2xl my-4">HANDS-ON LEARNING</h2>
+                  <div class="flex space-x-4">
+                    <p>
+                      Dive into projects and learn by doing, transforming theory
+                      into practice.
+                    </p>
+                    <img
+                      src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.99988%2016.7705L13.2699%2012.5005H20.9219V11.5005H13.2679L8.99988%207.23047L4.22987%2012.0005L8.99988%2016.7705Z'%20fill='white'/%3e%3c/svg%3e"
+                      alt="Diamond"
+                      class="w-5 h-5 sm:w-auto sm:h-auto"
+                    />
+                  </div>
                 </div>
               </div>
               <div class="md:flex md:items-center md:space-x-6">
                 <img src="/images/real.svg" alt="" />
                 <div class="border-b-2 border-[#ab65ef] pb-4">
-                  <h2 class="font-bold text-2xl my-4">REAL WORLD EXPERIENCE</h2>
-                  <p>
-                    Apply your skills to solve real-world problems and see
-                    immediate results.
-                  </p>
+                  <h2 class="font-bold text-2xl my-4">INTERACTIVE LEARNING</h2>
+                  <div class="flex space-x-4">
+                    <p>
+                      Engage actively with hands-on activities that bring
+                      concepts to life.
+                    </p>
+                    <img
+                      src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.99988%2016.7705L13.2699%2012.5005H20.9219V11.5005H13.2679L8.99988%207.23047L4.22987%2012.0005L8.99988%2016.7705Z'%20fill='white'/%3e%3c/svg%3e"
+                      alt="Diamond"
+                      class="w-5 h-5 sm:w-auto sm:h-auto"
+                    />
+                  </div>
                 </div>
               </div>
               <div class="md:flex md:items-center md:space-x-6">
                 <img src="/images/real.svg" alt="" />
                 <div class="border-b-2 border-[#ab65ef] pb-4">
-                  <h2 class="font-bold text-2xl my-4">REAL WORLD EXPERIENCE</h2>
-                  <p>
-                    Apply your skills to solve real-world problems and see
-                    immediate results.
-                  </p>
+                  <h2 class="font-bold text-2xl my-4">
+                    COLLABORATIVE LEARNING
+                  </h2>
+                  <div class="flex space-x-4">
+                    <p>
+                      Collaborate with peers to share insights, tackle
+                      challenges, and grow together.
+                    </p>
+                    <img
+                      src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.99988%2016.7705L13.2699%2012.5005H20.9219V11.5005H13.2679L8.99988%207.23047L4.22987%2012.0005L8.99988%2016.7705Z'%20fill='white'/%3e%3c/svg%3e"
+                      alt="Diamond"
+                      class="w-5 h-5 sm:w-auto sm:h-auto"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <div class="absolute top-0 -z-30 right-[600px] opacity-30">
-          <img src="/images/background.svg" alt="" />
+
+        <!-- our journey -->
+        <section>
+          <div
+            class="w-full mb-28 py-20 flex flex-col items-center justify-center space-y-5 space-x-10 bg-[#201f24] "
+          >
+            <div>
+              <h2 class="text-3xl font-medium">Our Journey</h2>
+            </div>
+
+            <div class=" w-[90%] md:w-[60%] grid md:grid-cols-3 gap-8 md:gap-6">
+              <div class="border-2 border-[#3f1c4a] p-6 bg-black mx-auto">
+                <div class="flex gap-2 items-center mb-4">
+                  <div class="w-6 h-6 gap-4 bg-purple-500 rounded-full"></div>
+                  <h3 class="text-2xl font-semibold dark:text-white">
+                    The Leap
+                  </h3>
+                </div>
+                <p class="text-justify text-lg">
+                  Blockfuse Labs was established with a mission to empower
+                  developers through both remote and onsite training. Our
+                  primary agenda is to build a sustainable blockchain economy by
+                  fostering innovation, technical expertise, and community
+                  development across Africa and beyond
+                </p> 
+              </div>
+
+              <div class="border-2 border-[#3f1c4a] p-6 bg-black">
+                <div class="flex gap-2 items-center mb-4">
+                  <div class="w-6 h-6 gap-4 bg-purple-500 rounded-full"></div>
+                  <h3 class="text-2xl font-semibold dark:text-white">
+                    Our today
+                  </h3>
+                </div>
+                <p class="text-justify text-lg">
+                  Today, Blockfuse Labs stands as a beacon of blockchain
+                  education, offering cutting-edge courses that cover everything
+                  from basic blockchain principles to advanced development,
+                  helping learners master the future of technology.
+                </p>
+              </div>
+              <div class="border-2 border-[#3f1c4a] p-6 bg-black">
+                <div class="flex gap-2 items-center mb-4">
+                  <div class="w-6 h-6 gap-4 bg-purple-500 rounded-full"></div>
+                  <h3 class="text-2xl font-semibold dark:text-white">
+                    Our tomorrow
+                  </h3>
+                </div>
+                <p class="text-justify text-lg">
+                  As we look to the future, we aim to expand our reach and
+                  impact, continually adapting to the evolving needs of the
+                  blockchain ecosystem. Our commitment is to provide unmatched
+                  training and comprehensive support across to blockchain
+                  enthusiasts across Africa and beyond.
+                </p>
+              </div>
+            </div>
+            <p>
+              Start Your Journey Today
+            </p>
+            <button
+                  class="mb-2 border-2 border-[#3f1c4a] flex items-center gap-3 py-3 px-14 bg-[#ab65ef]"
+                >
+                  Join our Community
+                  <img src="/images/apply.svg" alt="" />
+                </button>
+
+              </div>
+          </div>
+        </section>
+
+        <!-- testimonial section -->
+        <section></section>
+
+      <!--  -->
+        <section>
+          <div class="w-full flex flex-col items-center space-y-10 mb-28">
+            <h2 class="text-3xl font-medium">Our Partners</h2>
+            <div  class="flex flex-col items-center space-y-6">
+              <img src="/images/HackMD logo.svg" alt="">
+              <h2 class="text-3xl font-medium">HackMD</h2>
+              <div class="w-2 h-2 gap-4 bg-purple-500 rounded-full"></div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- join the next cohort -->
+         
+        <section>
+          <div class=" w-[90%] md:w-[50%] text-center mx-auto flex flex-col items-center space-y-5 mb-36">
+            <h2 class="text-3xl font-medium">Join the next cohort</h2>
+            <p>
+              Step into the future of blockchain with Blockfuse Labs! Our upcoming cohort offers hands-on training, expert mentorship, and 
+              a vibrant community to help you build and thrive in Web3. Secure your spot and start your journey today!
+            </p>
+            <p>
+              Start Your Journey Today
+            </p>
+            <button
+                  class="  mb-2 border-2 border-[#3f1c4a] flex items-center gap-3 py-3  px-10 bg-[#ab65ef]"
+                >
+                  Join our Community
+                  <img src="/images/apply.svg" alt="" />
+                </button>
+
+          </div>
+        </section>
+
+        <!-- FAQ -->
+
+        <section>
+          <div class="w-full flex flex-col space-y-10">
+            <div class=" w-[90%] md:w-2/5 mx-auto text-center text-cent">
+              <h2 class="text-3xl font-medium">FAQ'S</h2>
+            <p>
+              Everything you need to know about Blockfuse Labs! Can't find the answer you're looking for? 
+              Please chat with our friendly team, or <a href="" class="text-[#ab65ef]">reach out to us on our Telegram channel here.</a>
+            </p>
+            </div>
+
+              <!-- the questions -->
+            <div class="w-[90%] mx-auto text-l">
+              <!-- quest 1 -->
+              <div  class="border-b-2 border-[#3f1c4a] p-8">
+                <details>
+                  <summary class="list-none">
+                    <div class="font-semibold text-lg flex justify-between items-center">
+                      <p class="hover:text-[#ab65ef]">What is Blockfuse Labs?</p>
+                      <span class="show-btn">+</span>
+                    </div>
+                  </summary>
+                <div class="p-4">
+                  <p>Blockfuse Labs is a tech hub dedicated to empowering individuals with skills in blockchain development. 
+                    We offer FREE hands-on training, mentorship, and resources to help aspiring developers transition from Web2 to Web3, 
+                    while also fostering innovation through product development.
+                  </p>
+                </div>
+
+                </details>
+
+              </div>
+
+              <!-- quest 2 -->
+              <div  class="border-b-2 border-[#3f1c4a] p-8">
+                <details>
+                  <summary class="list-none">
+                    <div class="font-semibold text-lg flex justify-between items-center">
+                      <p class="hover:text-[#ab65ef]">
+                        Who can join Blockfuse Labs Cohort?</p>
+                      <span class="show-btn">+</span>
+                    </div>
+                  </summary>
+                <div class="p-4">
+                  <p>Anyone with a passion for learning, a curiosity about blockchain technology, and a commitment to personal 
+                    and professional growth can apply. Whether you're a beginner or an experienced developer looking to enhance 
+                    your skills, we welcome you!
+                  </p>
+                </div>
+
+                </details>
+              </div>
+
+              <!-- ques 3 -->
+              <div  class="border-b-2 border-[#3f1c4a] p-8">
+                <details>
+                  <summary class="list-none">
+                    <div class="font-semibold text-lg flex justify-between items-center">
+                      <p class="hover:text-[#ab65ef]">
+                        What programs does Blockfuse Labs offer?</p>
+                      <span class="show-btn">+</span>
+                    </div>
+                  </summary>
+                <div class="p-4">
+                  <p>Blockfuse Labs offers two main programs: <br>
+                    <span class="font-bold text-xl">Web2 to Web3 Preparatory Bootcamp </span><br>
+                    Designed for beginners with no coding experience, 
+                    this program teaches Web2 essentials like HTML, CSS, 
+                    JavaScript, React, and Node.js to build a strong foundation 
+                    for Web3 development. <br>
+                    <span class="font-bold text-xl">Web3 Bootcamp</span> <br>
+                    Tailored for experienced Web2 developers, this program focuses on mastering blockchain technologies, 
+                    working on real-world Web3 projects, and gaining mentorship from industry experts.
+                    Whether you're starting from scratch or looking to level up, we have a program for you!
+
+                  </p>
+                </div>
+
+                </details>
+              </div>
+
+              <!-- quest 4 -->
+
+              <div  class="border-b-2 border-[#3f1c4a] p-8">
+                <details>
+                  <summary class="list-none">
+                    <div class="font-semibold text-lg flex justify-between items-center">
+                      <p class="hover:text-[#ab65ef]">How do I enroll in a Blockfuse Labs cohort?
+                        </p>
+                      <span class="show-btn">+</span>
+                    </div>
+                  </summary>
+                <div>
+                  <p class="p-4">Enrollment is easy! Visit our official website and follow the application process. 
+                    Keep an eye on announcements for open registrations and deadlines. Click here to apply.
+                  </p>
+                </div>
+
+                </details>
+              </div>
+
+              <!-- /quest 5 -->
+
+              <div  class="border-b-2 border-[#3f1c4a] p-8">
+                <details>
+                  <summary class="list-none">
+                    <div class="font-semibold text-lg flex justify-between items-center">
+                      <p class="hover:text-[#ab65ef]">
+
+                        How can Blockfuse Labs help with my career?</p>
+                      <span class="show-btn">+</span>
+                    </div>
+                  </summary>
+                <div class="p-4">
+                  <p>Blockfuse Labs equips you with in-demand skills in blockchain and Web3 development, 
+                    connecting you to a network of industry professionals and providing opportunities to work on real-world projects. 
+                    Our graduates are well-prepared to enter the job market, launch startups, or contribute to cutting-edge innovations.
+                  </p>
+                </div>
+                </details>
+              </div>
+
+              <!-- qeust 6 -->
+              <div  class="border-b-2 border-[#3f1c4a] p-8">
+                <details>
+                  <summary class="list-none">
+                    <div class="font-semibold text-lg flex justify-between items-center">
+                      <p class="hover:text-[#ab65ef]">
+                        Is there a community I can join?</p>
+                      <span class="show-btn">+</span>
+                    </div>
+                  </summary>
+                <div class="p-4">
+                  <p>Absolutely! Blockfuse Labs has a vibrant and supportive community where members collaborate, 
+                    learn, and grow together. You can join our Telegram Group here, participate in meetups, and become part 
+                    of a thriving network of developers and tech enthusiasts.
+                  </p>
+                </div>
+                </details>
+              </div>
+                 
+              </div>
+
+          </div>
+        </section>
+
+        <!-- section subscribe to news letter -->
+
+        <section class=" bg-[#201f24]">
+          <div  class=" w-[90%] md:w-2/4 p-2 md:py-20 flex flex-col mx-auto text-center items-center justify-center space-y-6 mb-28">
+            <h2 class="text-3xl font-medium">Subscribe to Our Newsletter</h2>
+            <p>Stay ahead in the world of blockchain! Get the latest updates, insights, <br>
+              and exclusive resources from BlockTate Labs delivered straight to your inbox. Don't miss out—subscribe today!
+              </p>
+            <form action="" class="flex flex-col gap-5 w-4/5">
+              <input type="text"  placeholder="Enter your Email here" class="p-4 bg-[#1e2936]">
+              <button class="bg-[#ab65ef] p-4">Subscribe</button>
+            </form>
+
+          </div>
+        </section>
+
+        <!-- join our community -->
+         <section class="w-full pb-12">
+          <div class="w-[90%] md:w-3/4 flex flex-col items-center justify-center mx-auto space-y-8  text-center">
+            <h2 class="text-3xl font-medium">Join our Community</h2>
+            <p>Become part of a thriving network of blockchain enthusiasts and professionals.</p>
+            <div class="rounded-full border-2  border-[#3f1c4a] h-20 w-20 flex items-center justify-center">
+              <img src="/images/blockfuselogo1.png" alt="" width="32" height="32">
+            </div>
+
+            <!-- images -->
+            <div class=" hidden md:flex items-center w-3/4 justify-end">
+              <div class=" w-14 h-14 md:h-28 md:w-28 ">
+                <img src="/images/human11.jpg " alt="" class="w-full h-full object-cover rounded-full border-2 border-[#ab65ef]">
+              </div>
+              <div class=" w-14 h-14 md:h-28 md:w-28">
+                <img src="/images/human11.jpg " alt="" class="w-full h-full object-cover rounded-full border-2 border-[#ab65ef] -ml-[20px] ">
+              </div>
+              <div class=" w-14 h-14 md:h-28 md:w-28">
+                <img src="/images/human21.jpeg " alt="" class="w-full h-full object-cover rounded-full border-2 border-[#ab65ef] -ml-[40px]">
+              </div>
+              <div class=" w-14 h-14 md:h-28 md:w-28">
+                <img src="/images/human31.jpeg " alt="" class="w-full h-full object-cover rounded-full border-2 border-[#ab65ef] -ml-[80px]" >
+              </div>
+              <div class=" w-14 h-14 md:h-32 md:w-32 z-1">
+                <img src="/images/human41.jpeg " alt="" class="w-full h-full object-cover rounded-full border-2 border-[#ab65ef] -ml-[100px]">
+              </div>
+              <div class=" w-14 h-14 md:h-28 md:w-28">
+                <img src="/images/human51.jpeg " alt="" class="w-full h-full object-cover rounded-full border-2 border-[#ab65ef] -ml-[120px]">
+              </div>
+              <div class=" w-14 h-14 md:h-28 md:w-28">
+                <img src="/images/human61.jpeg " alt="" class="w-full h-full object-cover rounded-full border-2 border-[#ab65ef] -ml-[140px]">
+              </div>
+              <div class=" w-14 h-14 md:h-28 md:w-28">
+                <img src="/images/human71.jpg " alt="" class="w-full h-full object-cover rounded-full border-2 border-[#ab65ef] -ml-[180px]">
+              </div>
+              <div class=" w-14 h-14 md:h-28 md:w-28">
+                <img src="/images/human81.jpeg " alt="" class="w-full h-full object-cover rounded-full border-2 border-[#ab65ef] -ml-[180px]">
+              </div>
+            </div>
+
+
+            <div class="flex flex-col md:flex-row gap-4 items-center">
+              <p>Connect with us on Telegram</p>
+              <button
+                  class="border-2 border-[#3f1c4a] flex items-center gap-2 py-2 px-8 bg-[#ab65ef]"
+                >
+                  Join our Community
+                  <img src="/images/apply.svg" alt="" />
+                </button>
+            </div>
+          </div>
+         </section>
+         <hr>
+        
+         <!-- background image -->
+        <div class="absolute top-48 md:top-0 -z-30 md:right-[600px] opacity-20 ">
+          <img src="/images/background.svg" alt="" >
         </div>
+
+        <!-- back to the top -->
+        <div>
+          <button class="bg-[#933ce5] p-4 rounded-full fixed right-2 bottom-10"><a href="#header"><img src="/images/backtohome.svg" alt=""></a></button>
+        </div>
+        
       </main>
+
+       <!-- footer -->
+      <footer>
+        <section>
+          <div class="w-[90%] md:w-3/4 py-10 flex flex-col mx-auto space-y-10">
+
+            <div class="flex flex-col gap-3 items-center md:self-start">
+              <img src="/images/blockfuselogo1.png" alt="" width="32" height="32">
+              <p>support@blockfuselabs.com</p>
+            </div>
+
+            <div class="flex flex-col gap-6 md:flex-row items-center justify-between">
+              <ul class="flex items-center  flex-wrap gap-4 ">
+                <li class="a">Home </li>
+                <li class="a">About us</li>
+                <li class="a">Team</li>
+                <li class="a">Bootcamps</li>
+                <li class="a">Events</li>
+                <li class="a">Alumni</li>
+                <li class="a">Blog</li>
+                <li class="a">Open source</li>
+                <li class="a">Contact us</li>
+              </ul>
+              <button class="py-2 px-6 border-2 bg-black border-[#3f1c4a]">
+                Donate
+              </button>
+            </div>
+
+            <div class="bg-[#2f2e34] mt-8 px-8 py-4 flex flex-col md:flex-row items-center justify-between  gap-8 text-white">
+              
+              <div class="flex gap-4">
+                <img src="/images/facebook-svgrepo-com.svg" alt="">
+                <img src="/images/twitter-svgrepo-com (1).svg" alt="">
+                <img src="/images/instagram-svgrepo-com (2).svg" alt="">
+                <img src="/images/youtube-svgrepo-com (1).svg" alt="">
+              </div>
+
+              <div class="flex gap-4 items-center justify-center flex-wrap  text-[D1D5DB] text-sm">
+                <a href="">Privacy Policy</a>
+                <span>|</span>
+                <a href="">Terms & Conditions</a>
+                <span class="text-[#6B7280]"> All Copyright (C) 2024 Reserved</span>
+              </div>
+
+            </div>
+          </div>
+
+       
+       </section>
+
+      
+      </footer>
+
+       
+      
+
     </div>
   </body>
 </html>

@@ -688,10 +688,6 @@ summary::-webkit-details-marker {
   display: none;
 }
 
-.aspect-square {
-  aspect-ratio: 1 / 1;
-}
-
 .h-14 {
   height: 3.5rem;
 }
@@ -712,8 +708,8 @@ summary::-webkit-details-marker {
   height: 1.5rem;
 }
 
-.h-\[200px\] {
-  height: 200px;
+.h-60 {
+  height: 15rem;
 }
 
 .h-\[250px\] {
@@ -722,18 +718,6 @@ summary::-webkit-details-marker {
 
 .h-full {
   height: 100%;
-}
-
-.h-40 {
-  height: 10rem;
-}
-
-.h-52 {
-  height: 13rem;
-}
-
-.h-60 {
-  height: 15rem;
 }
 
 .w-14 {
@@ -768,12 +752,12 @@ summary::-webkit-details-marker {
   width: 100%;
 }
 
-.w-\[200px\] {
-  width: 200px;
-}
-
 .w-\[320px\] {
   width: 320px;
+}
+
+.w-\[70\%\] {
+  width: 70%;
 }
 
 .w-\[80\%\] {
@@ -790,38 +774,6 @@ summary::-webkit-details-marker {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-40 {
-  width: 10rem;
-}
-
-.w-52 {
-  width: 13rem;
-}
-
-.w-1\/4 {
-  width: 25%;
-}
-
-.w-2\/4 {
-  width: 50%;
-}
-
-.w-\[6\%\] {
-  width: 6%;
-}
-
-.w-\[60\%\] {
-  width: 60%;
-}
-
-.w-\[67\%\] {
-  width: 67%;
-}
-
-.w-\[70\%\] {
-  width: 70%;
 }
 
 .max-w-\[1920px\] {
@@ -1020,19 +972,9 @@ summary::-webkit-details-marker {
   background-image: url('/images/backdrop21.jpeg');
 }
 
-.object-contain {
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.object-scale-down {
-  -o-object-fit: scale-down;
-     object-fit: scale-down;
 }
 
 .p-2 {
@@ -1409,14 +1351,14 @@ summary::marker {
     text-align: left;
   }
 
-  .md\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
-  }
-
   .md\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .md\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
   }
 
   .md\:leading-normal {

@@ -554,10 +554,6 @@ video {
   display: none;
 }
 
-summary::-webkit-details-marker {
-  display: none !important ;
-}
-
 .fixed {
   position: fixed;
 }
@@ -670,6 +666,14 @@ summary::-webkit-details-marker {
 
 .mb-8 {
   margin-bottom: 2rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
 }
 
 .mt-8 {
@@ -1007,11 +1011,6 @@ summary::-webkit-details-marker {
   padding-right: 3.5rem;
 }
 
-.px-16 {
-  padding-left: 4rem;
-  padding-right: 4rem;
-}
-
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -1179,8 +1178,20 @@ summary::-webkit-details-marker {
   transition-duration: 150ms;
 }
 
-summary::marker {
-  display: none !important;
+.open {
+  font-size: 18px;
+  color: #d1d5db;
+  background-color: #2f2e34;
+  display: flex;
+  flex-direction: column;
+  padding-inline: 32px;
+  padding-block: 15px 10px;
+  gap: 4px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 4rem;
+  z-index: 10;
 }
 
 .hover\:text-\[\#ab65ef\]:hover {
@@ -1236,6 +1247,10 @@ summary::marker {
     display: flex;
   }
 
+  .md\:hidden {
+    display: none;
+  }
+
   .md\:aspect-square {
     aspect-ratio: 1 / 1;
   }
@@ -1278,6 +1293,10 @@ summary::marker {
 
   .md\:w-32 {
     width: 8rem;
+  }
+
+  .md\:w-4\/5 {
+    width: 80%;
   }
 
   .md\:w-72 {

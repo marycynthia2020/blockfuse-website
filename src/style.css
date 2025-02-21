@@ -3,11 +3,20 @@
 @tailwind utilities;
 
 @layer base {
-  summary::-webkit-details-marker {
-    display: none !important ;
-  }
 }
 
-summary::marker {
-  display: none !important;
+.open {
+  font-size: 18px;
+  color: #d1d5db;
+  background-color: #2f2e34;
+  display: flex;
+  flex-direction: column;
+  padding-inline: 32px;
+  padding-block: 15px 10px;
+  gap: 4px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 4rem;
+  z-index: 10;
 }

@@ -12,11 +12,11 @@
     />
     <title>Blockfuse Landing Page</title>
   </head>
-  <body class="w-screen bg-[#111114] text-white font-space">
+  <body class="w-screen bg-[#111114] text-white font-space ">
     <div class="overflow-x-hidden relative max-w-[1920px]" >
       <header id="header">
         <nav
-          class="bg-[#2f2e34] w-4/5 py-4 px-8 mx-auto mt-8 mb-24 md:mb-36 flex items-center justify-between text-white "
+          class="bg-[#2f2e34] w-4/5 py-4 px-8 mx-auto mt-8 mb-24 md:mb-36 flex items-center justify-between text-white relative "
         >
           <div>
             <img
@@ -48,11 +48,37 @@
               Apply Now
               <img src="/images/apply.svg" alt="" />
             </button>
+            <img src="/images/sun.svg" alt=""/>
           </div>
-          <div class="">
-            <img src="/images/sun.svg" alt="" />
-            <img src="" alt="" />
+
+          <div class=" flex gap-4 md:hidden">
+            <img src="/images/sun.svg" alt=""/>
+            <img src="/images/hamburger.svg" alt=" " id="hamburger"  class="md:hidden"/>
           </div>
+
+          <ul  id="mobile-nav-menu" class="hidden">
+            <li><a href="" class="text-[#ab65ef]">Home</a></li>
+            <li><a href="">About us</a></li>
+            <li><a href="">Team</a></li>
+            <li><a href="">BootCamp</a></li>
+            <li><a href="">Events</a></li>
+            <li><a href="">Alumni</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Open Source</a></li>
+            <li><a href="">Contact us</a></li>
+            <li><a href="">Faucet</a></li>
+            <li><button
+              class="border-2 border-[#3f1c4a] flex gap-3 items-center py-2 px-8 mt-4 bg-[#ab65ef]"
+            >
+              Apply Now
+              <img src="/images/apply.svg" alt="" />
+            </button>
+          </li>
+  
+          </ul>
+
+          
+
         </nav>
       </header>
 
@@ -120,14 +146,14 @@
             <!-- our bootcamp -->
         <section>
           <div
-            class="w-[90%] mb-28 p-4 flex flex-col items-center  space-y-10 space-x-10"
+            class="w-[90%] mb-28 p-4 flex flex-col items-center md:mx-auto  space-y-10 space-x-10"
           >
             <div>
               <h2 class="text-2xl font-bold">Our Bootcamps</h2>
             </div>
 
             <div
-              class="w-full flex flex-col md:flex-row space-x-10 space-y-10 items-end"
+              class="w-full flex flex-col md:flex-row  space-x-10 space-y-10 items-end"
             >
               <div
                 class="w-full mx-auto md:w-1/2 border-2 border-[#3f1c4a] p-6 flex flex-col"
@@ -188,9 +214,9 @@
             <!-- more than just the basic -->
         <section>
           <div
-            class="w-[90%] text-center md:w-[75%] px-4 md:mx-auto  mb-20 flex flex-col items-center justify-center space-y-20"
+            class="w-[90%]  md:w-[75%] px-4 md:mx-auto  mb-20 flex flex-col items-center justify-center space-y-20"
           >
-            <div>
+            <div >
               <h2 class="text-3xl font-medium">More Than Just the Basic</h2>
             </div>
 
@@ -212,7 +238,7 @@
                   </div>
                 </div>
               </div>
-              <div class="md:flex md:items-center md:space-x-6">
+              <div class="md:flex items-center md:space-x-6">
                 <img src="/images/real.svg" alt="" />
                 <div class="border-b-2 border-[#ab65ef] pb-4">
                   <h2 class="font-bold text-2xl my-4">HANDS-ON LEARNING</h2>
@@ -272,7 +298,7 @@
         <!-- our journey -->
         <section class="w-full bg-[#201f24] mx-auto ">
           <div
-            class="w-[90%] mb-28 py-20 flex flex-col items-center justify-center gap-12 "
+            class="w-[90%] mb-28 py-20 flex flex-col items-center justify-center gap-12 mx-auto "
           >
             <div>
               <h2 class="text-3xl font-medium">Our Journey</h2>
@@ -548,13 +574,13 @@
 
         <!-- section subscribe to news letter -->
 
-        <section class=" bg-[#201f24]">
-          <div  class=" w-[90%] md:w-2/4 p-2 md:py-20 flex flex-col mx-auto text-center items-center justify-center space-y-6 mb-28">
+        <section class=" bg-[#201f24] mt-20">
+          <div  class=" w-[90%] md:w-2/4 p-2 py-10 md:py-20 flex flex-col mx-auto text-center items-center justify-center space-y-6 mb-28">
             <h2 class="text-3xl font-medium">Subscribe to Our Newsletter</h2>
             <p>Stay ahead in the world of blockchain! Get the latest updates, insights, <br>
               and exclusive resources from BlockTate Labs delivered straight to your inbox. Don't miss out—subscribe today!
               </p>
-            <form action="" class="flex flex-col gap-5 w-4/5">
+            <form action="" class="flex flex-col gap-5 w-full md:w-4/5">
               <input type="text"  placeholder="Enter your Email here" class="p-4 bg-[#1e2936]">
               <button class="bg-[#ab65ef] p-4">Subscribe</button>
             </form>
@@ -674,15 +700,11 @@
             </div>
           </div>
 
-       
        </section>
 
-      
       </footer>
 
-       
-      
-
     </div>
+    <script src="/script/index.js"></script>
   </body>
 </html>

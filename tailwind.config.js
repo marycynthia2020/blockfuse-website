@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        background: "url('/images/Background')",
+        background: "url('/images/background.svg')",
         web2: "url('/images/backdrop11.jpeg')",
         web3: "url('/images/backdrop21.jpeg')",
       },

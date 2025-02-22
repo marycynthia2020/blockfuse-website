@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Blockfuse Landing Page</title>
+  </head>
+  <body class="w-screen text-white font-space bg-[#111114]">
+    <div class="overflow-x-hidden relative max-w-[1920px]">
+      <header id="header">
+        <nav
+          class="bg-[#2f2e34] w-4/5 py-4 px-8 mx-auto mt-8 mb-24 flex items-center justify-between text-white relative"
+        >
+          <div>
+            <img
+              src="/images/blockfuselogo1.png"
+              alt=""
+              width="32"
+              height="32"
+            />
+          </div>
+          <ul class="hidden md:flex md:items-center space-x-4 opacity-70">
+            <li><a href="./index.html" class="text-[#ab65ef]">Home</a></li>
+            <li><a href="./about.html">About us</a></li>
+            <li><a href="./team.html">Team</a></li>
+            <li><a href="./bootcamp.html">BootCamp</a></li>
+            <li><a href="./events.html">Events</a></li>
+            <li><a href="./alumni.html">Alumni</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./opensource.html">Open Source</a></li>
+            <li><a href="./contactus.html">Contact us</a></li>
+            <li><a href="./faucet.html">Faucet</a></li>
+          </ul>
+          <div class="hidden md:flex items-center space-x-4">
+            <button class="py-2 px-6 border-2 bg-black border-[#3f1c4a]">
+              Donate
+            </button>
+            <button
+              class="border-2 border-[#3f1c4a] flex gap-3 items-center py-2 px-4 bg-[#ab65ef]"
+            >
+              Apply Now
+              <img src="/images/apply.svg" alt="" />
+            </button>
+            <img src="/images/sun.svg" alt="" />
+          </div>
+
+          <div class="flex gap-4 md:hidden">
+            <img src="/images/sun.svg" alt="" />
+            <img
+              src="/images/hamburger.svg"
+              alt=" "
+              id="hamburger"
+              class="md:hidden"
+            />
+          </div>
+          <!-- MOBILE  NAV MENU -->
+          <ul id="mobile-nav-menu" class="hidden">
+            <li><a href="./index.html" class="text-[#ab65ef]">Home</a></li>
+            <li><a href="./about.html">About us</a></li>
+            <li><a href="./team.html">Team</a></li>
+            <li><a href="./bootcamp.html">BootCamp</a></li>
+            <li><a href="./events.html">Events</a></li>
+            <li><a href="./alumni.html">Alumni</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./opensource.html">Open Source</a></li>
+            <li><a href="./contactus.html">Contact us</a></li>
+            <li><a href="./faucet.html">Faucet</a></li>
+            <li>
+              <button
+                class="border-2 border-[#3f1c4a] flex gap-3 items-center py-2 px-8 mt-4 bg-[#ab65ef]"
+              >
+                Apply Now
+                <img src="/images/apply.svg" alt="" />
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <!-- hero sction -->
+        <section>
+          <div
+            class="flex flex-col items-center text-center space-y-6 mb-20 md:mb-32"
+          >
+            <h1 class="w-4/5 md:w-full text-5xl md:text-6xl font-bold">
+              Meet Our Team
+              <span class="text-[#ab65ef]">At Blockfuse Labs</span>
+            </h1>
+            <div
+              class="flex flex-col space-y-1 opacity-70 w-4/5 md:full text-center"
+            >
+              <p class="text-[18px]">
+                Discover the bright minds shaping the blockchain space! Our Team
+                are
+              </p>
+              <p class="text-[18px]">
+                pioneers, creators, and leaders who drive innovation and inspire
+                the next
+              </p>
+              <p class="text-[18px]">
+                generation in the world of decentralized technology. Blockfuse
+                Labs team
+              </p>
+              <p class="text-[18px]">
+                continues to drive the future of decentralized technology across
+                the globe.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- team section -->
+
+        <section>
+          <div class="w-[95%] grid md:grid-cols-4 mx-auto gap-8 mb-12">
+            <div class="flex flex-col gap-2 place-items-center">
+              <a href="" class="w-[330px] h-[208px]"
+                ><img
+                  src="/images/fonder1.png"
+                  alt=""
+                  width="296"
+                  height="208"
+                  class="w-full h-full"
+              /></a>
+              <a href="" class="text-lg">Penum Gotar Long</a>
+              <a href="" class="text-sm text-[#d1d5db]">Founder</a>
+            </div>
+            <div class="flex flex-col gap-2 place-items-center">
+              <a href="" class="w-[330px] h-[208px]"
+                ><img
+                  src="/images/Adaku1.png"
+                  alt=""
+                  width="296"
+                  height="208"
+                  class="w-full h-full"
+              /></a>
+              <a href="" class="text-lg">Adaaku Peter Jr </a>
+              <a href="" class="text-sm text-[#d1d5db]">Co-founder/CEO</a>
+            </div>
+            <div class="flex flex-col gap-2 place-items-center">
+              <a href="" class="w-[330px] h-[208px]"
+                ><img
+                  src="/images/Tukura1.png"
+                  alt=""
+                  width="296"
+                  height="208"
+                  class="w-full h-full"
+              /></a>
+              <a href="" class="text-lg">Tukura Pishikeni</a>
+              <a href="" class="text-sm text-[#d1d5db]">Avisor</a>
+            </div>
+            <div class="flex flex-col gap-2 place-items-center">
+              <a href="" class="w-[330px] h-[208px]"
+                ><img
+                  src="/images/samuelvick1.png"
+                  alt=""
+                  width="296"
+                  height="208"
+                  class="w-full h-full"
+              /></a>
+              <a href="" class="text-lg">Samuel Victor</a>
+              <a href="" class="text-sm text-[#d1d5db]">Engineer</a>
+            </div>
+            <div class="flex flex-col gap-2 place-items-center">
+              <a href="" class="w-[330px] h-[208px]"
+                ><img
+                  src="/images/luka1.png"
+                  alt=""
+                  width="296"
+                  height="208"
+                  class="w-full h-full"
+              /></a>
+              <a href="" class="text-lg">Kunanzang Manoah Luka </a>
+              <a href="" class="text-sm text-[#d1d5db]"> Engineer</a>
+            </div>
+            <div class="flex flex-col gap-2 place-items-center">
+              <a href="" class="w-[330px] h-[208px]"
+                ><img
+                  src="/images/itodo1.png"
+                  alt=""
+                  width="296"
+                  height="208"
+                  class="w-full h-full"
+              /></a>
+              <a href="" class="text-lg">Itodo Simon</a>
+              <a href="" class="text-sm text-[#d1d5db]">Engineer</a>
+            </div>
+            <div class="flex flex-col gap-2 place-items-center">
+              <a href="" class="w-[330px] h-[208px]"
+                ><img
+                  src="/images/dapal1.png"
+                  alt=""
+                  width="296"
+                  height="208"
+                  class="w-full h-full"
+              /></a>
+              <a href="" class="text-lg">Dapal Mitong</a>
+              <a href="" class="text-sm text-[#d1d5db]">Legal officer</a>
+            </div>
+            <div class="flex flex-col gap-2 place-items-center">
+              <a href="" class="w-[330px] h-[208px]"
+                ><img
+                  src="/images/dukup1.png"
+                  alt=""
+                  width="296"
+                  height="208"
+                  class="w-full h-full"
+              /></a>
+              <a href="" class="text-lg">Bala Nenman Dakup</a>
+              <a href="" class="text-sm text-[#d1d5db]">Graphic Designer</a>
+            </div>
+            <div class="flex flex-col gap-2 place-items-center">
+              <a href="" class="w-[330px] h-[208px]"
+                ><img
+                  src="/images/Jennifer1.png"
+                  alt=""
+                  width="296"
+                  height="208"
+                  class="w-full h-full"
+              /></a>
+              <a href="" class="text-lg">Karlyol Jennifer Wuese</a>
+              <a href="" class="text-sm text-[#d1d5db]">Office Assistant</a>
+            </div>
+            <div class="flex flex-col gap-2 place-items-center">
+              <a href="" class="w-[330px] h-[208px]"
+                ><img
+                  src="/images/harrison1.png"
+                  alt=""
+                  width="296"
+                  height="208"
+                  class="w-full h-full"
+              /></a>
+              <a href="" class="text-lg">Harrison Titus Iorfa</a>
+              <a href="" class="text-sm text-[#d1d5db]"
+                >Social Media Manager/Content Writer/Content Strategies</a
+              >
+            </div>
+          </div>
+        </section>
+
+        <!-- join our community -->
+        <section class="w-full bg-[#201f24] pt-16 pb-12">
+          <div
+            class="w-[90%] md:w-3/4 flex flex-col items-center justify-center mx-auto space-y-10 text-center"
+          >
+            <h2 class="text-3xl font-medium">Join our Community</h2>
+            <p>
+              Become part of a thriving network of blockchain enthusiasts and
+              professionals.
+            </p>
+            <div
+              class="rounded-full border-2 border-[#3f1c4a] h-20 w-20 flex items-center justify-center"
+            >
+              <img
+                src="/images/blockfuselogo1.png"
+                alt=""
+                width="32"
+                height="32"
+              />
+            </div>
+
+            <!-- images -->
+            <div class="hidden md:flex items-center w-3/4 justify-end">
+              <div class="w-14 h-14 md:h-28 md:w-28">
+                <img
+                  src="/images/human11.jpg "
+                  alt=""
+                  class="w-full h-full object-cover rounded-full border-2 border-[#ab65ef]"
+                />
+              </div>
+              <div class="w-14 h-14 md:h-28 md:w-28">
+                <img
+                  src="/images/human11.jpg "
+                  alt=""
+                  class="w-full h-full object-cover rounded-full border-2 border-[#ab65ef] -ml-[20px]"
+                />
+              </div>
+              <div class="w-14 h-14 md:h-28 md:w-28">
+                <img
+                  src="/images/human21.jpeg "
+                  alt=""
+                  class="w-full h-full object-cover rounded-full border-2 border-[#ab65ef] -ml-[40px]"
+                />
+              </div>
+              <div class="w-14 h-14 md:h-28 md:w-28">
+                <img
+                  src="/images/human31.jpeg "
+                  alt=""
+                  class="w-full h-full object-cover rounded-full border-2 border-[#ab65ef] -ml-[80px]"
+                />
+              </div>
+              <div class="w-14 h-14 md:h-32 md:w-32 z-1">
+                <img
+                  src="/images/human41.jpeg "
+                  alt=""
+                  class="w-full h-full object-cover rounded-full border-2 border-[#ab65ef] -ml-[100px]"
+                />
+              </div>
+              <div class="w-14 h-14 md:h-28 md:w-28">
+                <img
+                  src="/images/human51.jpeg "
+                  alt=""
+                  class="w-full h-full object-cover rounded-full border-2 border-[#ab65ef] -ml-[120px]"
+                />
+              </div>
+              <div class="w-14 h-14 md:h-28 md:w-28">
+                <img
+                  src="/images/human61.jpeg "
+                  alt=""
+                  class="w-full h-full object-cover rounded-full border-2 border-[#ab65ef] -ml-[140px]"
+                />
+              </div>
+              <div class="w-14 h-14 md:h-28 md:w-28">
+                <img
+                  src="/images/human71.jpg "
+                  alt=""
+                  class="w-full h-full object-cover rounded-full border-2 border-[#ab65ef] -ml-[180px]"
+                />
+              </div>
+              <div class="w-14 h-14 md:h-28 md:w-28">
+                <img
+                  src="/images/human81.jpeg "
+                  alt=""
+                  class="w-full h-full object-cover rounded-full border-2 border-[#ab65ef] -ml-[180px]"
+                />
+              </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row gap-4 items-center">
+              <p>Connect with us on Telegram</p>
+              <button
+                class="border-2 border-[#3f1c4a] flex items-center gap-2 py-2 px-8 bg-[#ab65ef]"
+              >
+                Join our Community
+                <img src="/images/apply.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </section>
+        <hr />
+
+        <!-- background image -->
+        <div class="absolute top-48 md:top-0 -z-30 md:right-[600px] opacity-20">
+          <img src="/images/background.svg" alt="" />
+        </div>
+
+        <!-- back to the top -->
+        <div>
+          <button class="bg-[#933ce5] p-4 rounded-full fixed right-2 bottom-10">
+            <a href="#header"><img src="/images/backtohome.svg" alt="" /></a>
+          </button>
+        </div>
+      </main>
+
+      <!-- footer -->
+      <footer>
+        <section>
+          <div class="w-[90%] md:w-3/4 py-10 flex flex-col mx-auto space-y-10">
+            <div class="flex flex-col gap-3 items-center md:self-start">
+              <img
+                src="/images/blockfuselogo1.png"
+                alt=""
+                width="32"
+                height="32"
+              />
+              <p>support@blockfuselabs.com</p>
+            </div>
+
+            <div
+              class="flex flex-col gap-6 md:flex-row items-center justify-between"
+            >
+              <ul class="flex items-center flex-wrap gap-4">
+                <li class="a">Home</li>
+                <li class="a">About us</li>
+                <li class="a">Team</li>
+                <li class="a">Bootcamps</li>
+                <li class="a">Events</li>
+                <li class="a">Alumni</li>
+                <li class="a">Blog</li>
+                <li class="a">Open source</li>
+                <li class="a">Contact us</li>
+              </ul>
+              <button class="py-2 px-6 border-2 bg-black border-[#3f1c4a]">
+                Donate
+              </button>
+            </div>
+
+            <div
+              class="bg-[#2f2e34] mt-8 px-8 py-4 flex flex-col md:flex-row items-center justify-between gap-8 text-white"
+            >
+              <div class="flex gap-4">
+                <img src="/images/facebook-svgrepo-com.svg" alt="" />
+                <img src="/images/twitter-svgrepo-com (1).svg" alt="" />
+                <img src="/images/instagram-svgrepo-com (2).svg" alt="" />
+                <img src="/images/youtube-svgrepo-com (1).svg" alt="" />
+              </div>
+
+              <div
+                class="flex gap-4 items-center justify-center flex-wrap text-[D1D5DB] text-sm"
+              >
+                <a href="">Privacy Policy</a>
+                <span>|</span>
+                <a href="">Terms & Conditions</a>
+                <span class="text-[#6B7280]">
+                  All Copyright (C) 2024 Reserved</span
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+      </footer>
+    </div>
+    <script src="/script/index.js"></script>
+  </body>
+</html>
